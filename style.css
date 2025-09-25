@@ -1,0 +1,243 @@
+:root {
+  --tertiary: red;
+  --shadow: -5px 5px 10px 5px rgba(153, 152, 152, 0.582);
+}
+
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: white;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.btn {
+  background: var(--tertiary);
+  border: 1px solid red;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/* global section */
+
+/* .wrapper {
+  background: white;
+} */
+
+.global {
+  background-color: skyblue;
+  padding: 10px 0px;
+}
+
+.global > div {
+  /* padding: 10px 0px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header section  */
+
+header {
+  background-color: darkblue;
+  color: white;
+  padding: 10px 0px;
+  font-size: 24px;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* header>div>div */ /*------->*/ /* just showing another way to select logo */
+.logo {
+  background-color: white;
+  color: darkblue;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > div {
+  width: 70px;
+  height: 70px;
+  border: 2px dotted darkblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li:hover {
+  background-color: red;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+header ul > li {
+  margin-left: 1rem;
+}
+
+/* ul li {
+  margin: auto;
+  list-style: none; */
+/* } */
+/* hero section  */
+.hero {
+  background: url(./assets/background.jpg) no-repeat center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-section {
+  width: 450px;
+  background: #000000b4;
+  color: white;
+  border-radius: 10px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero hr {
+  width: 100%;
+}
+
+/* latest post section  */
+
+.latest {
+  background: url(./assets/latest.jpg) no-repeat center;
+  background-size: cover;
+  padding: 3rem;
+  filter: grayscale(0.4);
+}
+
+.main {
+  display: flex;
+  gap: 1rem;
+}
+
+.articles {
+  /* background: red; */
+  width: 66vw;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.726);
+  border-radius: 10px;
+  margin-bottom: 24px;
+  padding: 20px 16px;
+}
+
+article .art-img {
+  width: 350px;
+}
+
+article .btn {
+  float: right;
+}
+
+.side-links {
+  width: 34vw;
+}
+
+.country {
+  background: rgba(169, 204, 99, 0.623);
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.date {
+  background: rgba(216, 154, 74, 0.623);
+  padding: 16px;
+  border-radius: 10px;
+}
+
+/* Recommendation  */
+
+.recommendation {
+  padding: 10px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* display: flex;
+  flex: wrap;
+  gap: 2rem; */
+  /* justify-content: space-between; */
+}
+
+.card {
+  width: 350px;
+  box-shadow: var(--shadow);
+  padding-bottom: 32px;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+.card > img {
+  border-radius: 10px 10px 0 0;
+}
+
+.card .btn {
+  width: 100%;
+}
+/* subscribe section  */
+
+.subscribe {
+  margin-top: 2rem;
+  padding: 32px 0px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subs input {
+  line-height: 42px;
+  padding: 5px 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+/* footer  */
+
+footer {
+  background: black;
+  color: white;
+  padding: 64px;
+  display: flex;
+  text-align: center;
+  margin: 24px 0px 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
